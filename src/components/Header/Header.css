@@ -1,0 +1,26 @@
+.header {
+  max-width: 100%;
+}
+
+.header__container {
+  max-width: 1140px;
+  padding: 0 5.5%;
+  height: 74px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.header__link:hover {
+  opacity: 0.4;
+  transition: opacity 0.5s ease-out;
+}
+
+@media screen and (max-width: 800px) {
+}

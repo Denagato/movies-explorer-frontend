@@ -1,0 +1,156 @@
+.about-me {
+  width: 100%;
+}
+
+.about-me__container {
+  max-width: 1140px;
+  padding: 110px 5.5% 100px 5.5%;
+  margin: auto;
+  }
+
+.about-me__title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.21;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-me__line {
+  height: 1px;
+  background: black;
+  margin-top: 23px;
+}
+
+.about-me__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+
+.about-me__textblock {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.about-me__name {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 1.16;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-me__specialty {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.11;
+  font-weight: 500;
+  margin: 18px 0 0 0;
+}
+
+.about-me__details {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: 400;
+  margin: 26px 0 20px 0;
+}
+
+.about-me__links {
+  display: flex;
+  margin-top: auto;
+}
+
+.about-me__link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.about-me__link:hover {
+  opacity: 0.6;
+  transition: opacity 0.5s ease-out;
+}
+
+.about-me__fotoblock {
+  display: block;
+  width: 270px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .about-me__textblock {
+    max-width: 364px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .about-me__main {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .about-me__fotoblock {
+    order: -1;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 40px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-me__container {
+    padding: 70px 3%;
+  }
+
+  .about-me__title {
+    font-size: 18px;
+  }
+
+  .about-me__line {
+    margin-top: 28px;
+  }
+
+  .about-me__fotoblock {
+    order: -1;
+    width: 100%;
+  }
+
+  .about-me__name {
+    font-size: 30px;
+    line-height: 1.21;
+  }
+
+  .about-me__specialty {
+    font-size: 11px;
+    line-height: 1.45;
+    margin: 20px 0 0 0;
+  }
+
+  .about-me__details {
+    font-size: 11px;
+    line-height: 1.45;
+    margin: 20px 0 40px 0;
+  }
+}

@@ -1,0 +1,130 @@
+.card {
+  max-width: 1140px;
+  height: 134px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #F9F9F9;
+}
+
+.card__header {
+  height: 68px;
+  position: relative;
+  width: 100%;
+}
+
+.card__title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.21;
+  font-weight: 500;
+  padding: 14px 10px 9px 22px;
+  margin: 0;
+  width: 23ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__time {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 1.21;
+  font-weight: 400;
+  margin: 14px 0 9px 22px;
+  color: #645f5f;
+}
+
+.card__button {
+  position: absolute;
+  top: 100px;
+  left: 22px;
+  background: #F9F9F9;
+  background-image: url("../../images/save.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 14px;
+  height: 12px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-image: url("../../images/unsave.svg");
+  opacity: 0.4;
+  transition: all 0.5s ease-out;
+}
+
+.card__button:focus {
+  outline: none;
+}
+
+.card__button_save {
+  background-image: url("../../images/unsave.svg");
+}
+
+.card__button_remove {
+  background-image: url("../../images/remove.svg");
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.card__button_remove:hover {
+  background-image: url("../../images/remove.svg");
+  opacity: 0.4;
+  transition: opacity 0.5s ease-out;
+}
+
+.card__image {
+  width: 220px;
+  height: 122px;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 300px;
+    height: 232px;
+    margin: 0;
+  }
+
+  .card__title {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 14px;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .card__time {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0;
+    margin-left: 12px;
+  }
+
+  .card__header {
+    width: 228px;
+  }
+
+  .card__button {
+    top: 16px;
+    left: 270px;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 168px;
+  }
+}
