@@ -41,7 +41,7 @@
   border-radius: 5px;
   flex-grow: 1;
   display: block;
-  width: 98%;
+  max-width: 98%;
 }
 
 .search__input:focus {
@@ -84,12 +84,12 @@
 .search__button-tumbler {
   width: 36px;
   height: 20px;
-  border-radius: 20px;
   border: 0;
-  background-image: url('../../images/tumbler-off.svg');
+  background-color: white;
+  background-image: url('../../images/tumbler-on.svg');
   background-size: cover;
   margin-right: 12px;
-  margin-top: 19px;
+  margin-top: 17px;
 }
 
 .search__button-tumbler-on {

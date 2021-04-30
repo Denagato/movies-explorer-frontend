@@ -50,19 +50,6 @@
   transition: opacity 0.5s ease-out;
 }
 
-@media screen and (max-width: 850px) {
-  .nav-link {
-    display: flex;
-    margin: 92px auto 0 auto;
-    text-align: center;
-  }
-  .nav-link__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 450px) {
   .nav-link {
     width: 82px;

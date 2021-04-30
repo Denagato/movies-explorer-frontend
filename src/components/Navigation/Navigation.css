@@ -95,7 +95,7 @@
   outline: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .navigation__button {
     display: block;
     background-image: url(../../images/320menu.svg);

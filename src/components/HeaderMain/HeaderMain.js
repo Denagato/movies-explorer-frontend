@@ -11,10 +11,10 @@ function HeaderMain() {
           <img className="header-main__logo" alt="Логотип" src={logo}></img>
         </Link>
         <nav className="header-main__sign">
-          <Link to="/sign-up" className="header-main__signup">
+          <Link to="/signup" className="header-main__signup">
             Регистрация
           </Link>
-          <Link to="/sign-in" className="header-main__signin">
+          <Link to="/signin" className="header-main__signin">
             <button className="header-main__signin-btn">Войти</button>
           </Link>
         </nav>

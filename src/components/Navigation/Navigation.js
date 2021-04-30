@@ -3,7 +3,12 @@ import accountPic from '../../images/account.svg';
 
 import './Navigation.css';
 
-function Navigation({ togglePopup }) {
+function Navigation() {
+  function handleClick() {
+    // Временно, чтобы работало открытие меню
+    document.querySelector(".popup").classList.add("popup_opened");
+  }
+
   return (
     <nav className="navigation">
       <div className="navigation__films">
@@ -19,7 +24,7 @@ function Navigation({ togglePopup }) {
         <img className="navigation__pic" alt="Аккаунт" src={accountPic}></img>
         <span className="navigation__link-text">Аккаунт</span>
       </Link>
-      <button className="navigation__button" onClick={togglePopup}></button>
+      <button className="navigation__button" onClick={handleClick}></button>
       </div>
     </nav>
   );

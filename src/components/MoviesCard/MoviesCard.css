@@ -88,9 +88,10 @@
   width: 220px;
   height: 122px;
   margin: auto 0;
+  margin-right: 6px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .card {
     flex-direction: column-reverse;
     width: 300px;

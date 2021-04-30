@@ -1,13 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
-/* import accountPic from "../../images/account.svg"; */
+import accountPic from "../../images/account.svg";
 
 import "./PopupMenu.css";
 
 function PopupMenu() {
-  /*Временно, чтобы работало подчеркивание ссылки*/
+  // Временно, чтобы работало подчеркивание ссылки
   const location = useLocation().pathname;
 
-  /*Временно, чтобы работало закрытие меню*/
+  // Временно, чтобы работало закрытие меню
   function handleClick() {
     document.querySelector(".popup").classList.remove("popup_opened");
   }
@@ -41,8 +41,8 @@ function PopupMenu() {
           className="popup__link-account"
           onClick={handleClick}
         >
-          <span className="popup__link-text">Аккаунт</span>
-          <img className="popup__pic" alt="Аккаунт" /* src={accountPic} */></img>
+            <img className="popup__pic" alt="Аккаунт" src={accountPic}></img>
+            <span className="popup__link-text">Аккаунт</span>
         </Link>
         <button className="popup__btn-close" onClick={handleClick} />
       </div>
