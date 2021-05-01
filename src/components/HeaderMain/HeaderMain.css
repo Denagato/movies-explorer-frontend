@@ -1,0 +1,80 @@
+.header-main {
+  width: 100%;
+}
+
+.header-main__container {
+  max-width: 1140px;
+  padding: 0 5.5%;
+  height: 74px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-main__logo {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-main__logo:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-main__signup {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-main__signup:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-main__signin-btn {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 30px;
+  width: 76px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 500;
+  color: black;
+  background: #2BE080;
+  border: none;
+  border-radius: 3px;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-main__signin-btn:hover {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.5s ease-out;
+}
+
+@media screen and (max-width: 450px) {
+  .header-main__signup {
+    font-size: 10px;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .header-main__signin-btn {
+    margin-left: 14px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
