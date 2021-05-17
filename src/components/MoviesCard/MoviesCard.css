@@ -44,7 +44,7 @@
   top: 100px;
   left: 22px;
   background: #F9F9F9;
-  background-image: url("../../images/save.svg");
+  background-image: url("../../images/unsave.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -59,7 +59,7 @@
 }
 
 .card__button:hover {
-  background-image: url("../../images/unsave.svg");
+  background-image: url("../../images/save.svg");
   opacity: 0.4;
   transition: all 0.5s ease-out;
 }
@@ -69,7 +69,7 @@
 }
 
 .card__button_save {
-  background-image: url("../../images/unsave.svg");
+  background-image: url("../../images/save.svg");
 }
 
 .card__button_remove {

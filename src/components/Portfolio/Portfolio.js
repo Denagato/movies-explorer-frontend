@@ -7,7 +7,7 @@ function Portfolio() {
         <h2 className="portfolio__title">Портфолио</h2>
         <a
           className="portfolio__link-site"
-          href="https://github.com/ialse/how-to-learn"
+          href="https://github.com/Denagato/how-to-learn"
           target="_blank"
           rel="noreferrer"
         >
@@ -17,7 +17,7 @@ function Portfolio() {
         <div className="portfolio__line"></div>
         <a
           className="portfolio__link-site"
-          href="https://github.com/ialse/russian-travel"
+          href="https://github.com/Denagato/russian-travel"
           target="_blank"
           rel="noreferrer"
         >
@@ -27,7 +27,7 @@ function Portfolio() {
         <div className="portfolio__line"></div>
         <a
           className="portfolio__link-site"
-          href="https://github.com/ialse/react-mesto-auth"
+          href="https://github.com/Denagato/mesto-react"
           target="_blank"
           rel="noreferrer"
         >
