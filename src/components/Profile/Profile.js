@@ -66,13 +66,15 @@ function Profile({ signOut, updateUser, isLoading, textError }) {
           >
             {textError && textError}
           </span>
-          <span
-            className={`profile__text-error ${
-              textError && 'profile__text-error_visible'
+          <button
+            type="submit"
+            className={`profile__btn-edit ${
+              !form.isValid && 'profile__btn-edit_disabled'
             }`}
+            disabled={!form.isValid}
           >
-            {textError && textError}
-          </span>
+            Редактировать
+          </button>
         </form>
         <button type="button" className="profile__out" onClick={signOut}>Выйти из аккаунта</button>
       </div>

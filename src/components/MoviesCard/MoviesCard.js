@@ -5,14 +5,11 @@ function MoviesCard({ card, userCards, saveMovie, deleteUserMovie }) {
   let isUserMovie = false;
   let userMovieId;
 
-  if (userCards) {
-    isUserMovie = userCards.some((userCard) => {
-      if (userCard.movieId === card.movieId) {
-        userMovieId = userCard._id;
-        return true;
-      }
-    });
-  }
+   if (userCards)
+    isUserMovie = userCards.some(
+      (userCard) => userCard.movieId === card.movieId
+    );
+
 
   return (
     <div className="card">

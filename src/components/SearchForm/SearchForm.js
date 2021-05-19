@@ -52,7 +52,7 @@ function SearchForm({
           value={inputSearch}
           />
         </form>
-        <button className="search__button">Найти</button>
+        <button className="search__button" onClick={handleSubmit}>Найти</button>
       </div>
       <div className="search__flex search__flex_tumbler">
         <button

@@ -299,7 +299,9 @@ function App() {
       <div className="page">
         <Switch>
           <Route exact path="/">
-            <HeaderMain />
+            {loggedIn ? (
+              <Header />
+            ) : ( <HeaderMain /> )}
             <Main />
             <Footer />
           </Route>
