@@ -60,10 +60,38 @@
   outline: none;
 }
 
+.profile__error {
+  margin: 10px 0 0 0;
+  color: red;
+  font-size: 10px;
+  line-height: 1.21;
+  font-weight: 400;
+  height: 16px;
+}
+
 .profile__line {
   background: #E8E8E8;
   height: 1px;
   margin: 11px 0 12px 0;
+}
+
+.profile__preloader {
+  min-height: 100px;
+}
+
+.profile__text-error {
+  display: block;
+  color: red;
+  font-size: 11px;
+  line-height: 1.21;
+  margin: 0px 0 10px 0;
+  text-align: center;
+  min-height: 50px;
+  visibility: hidden;
+}
+
+.profile__text-error_visible {
+  visibility: visible;
 }
 
 .profile__btn-edit {

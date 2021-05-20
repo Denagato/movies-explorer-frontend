@@ -74,6 +74,21 @@
   font-weight: 400;
 }
 
+.form__text-error {
+  display: block;
+  color: red;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 146px 0 10px 0;
+  text-align: center;
+  min-height: 50px;
+  visibility: hidden;
+}
+
+.form__text-error_visible {
+  visibility: visible;
+}
+
 .form__btn {
   font-family: Inter;
   font-style: normal;

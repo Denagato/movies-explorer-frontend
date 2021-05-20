@@ -5,14 +5,14 @@ import './Header.css';
 
 import Navigation from '../Navigation/Navigation';
 
-function Header() {
+function Header({ togglePopup }) {
   return (
     <header className="header">
       <div className="header__container">
         <Link to="/" className="header__link" href="/">
           <img className="header__logo" alt="Логотип" src={logo}></img>
         </Link>
-        <Navigation />
+        <Navigation togglePopup={togglePopup} />
       </div>
     </header>
   );
